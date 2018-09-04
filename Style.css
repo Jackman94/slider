@@ -1,0 +1,49 @@
+.slider{
+    width:800px;
+    height: 600px;
+    margin: auto;
+    border: 5px dotted darkslateblue;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+.linebox{
+    width: 4800px;
+    height: 600px;
+    display: flex;
+    position: relative;
+    transition: all ease 2s;
+    left: 0;
+    right: 4800px;
+
+}
+img {
+    display: flex;
+    width:800px;
+    height: 600px;
+    float:left;
+}
+.linebox::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.leftbutton{
+    display: flex;
+    width: 100px;
+    height: 600px;
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    z-index: 200;
+
+}
+.rightbutton{
+
+
+    width: 100px;
+    height: 600px;
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    margin-left: 700px;
+    z-index: 200;
+}
